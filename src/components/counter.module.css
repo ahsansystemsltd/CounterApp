@@ -1,0 +1,64 @@
+.Name{
+  position: absolute;
+  bottom: 0;
+  right: 1%;
+  color: #999999;;
+}
+
+.Counter {
+    text-align: center;
+    padding: 15% 10%;
+    width: 45%;
+    height: 25%;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+.CounterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Value{
+    font-size: xxx-large;
+    font-family:'Impact';
+    color: #f0f0f0;
+    position: absolute;
+  }
+
+  .ValueBox {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #999999, #383838);
+    border-radius: 8px;
+  }
+  .Icon {
+    font-size: medium;
+    font-weight: bold;
+    padding: 10px 7px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-color: #999999;
+    background: none;
+    color: #999999;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.5s ease-in-out,
+                transform 0.5s ease-in-out,
+                background-color 0.5s ease-in-out,
+                border-width 0.5s ease-in-out;
+  }
+  
+  .Increment:hover {
+    color: #fff;
+    border-width: 5px;
+    background-image: linear-gradient(to right, #999999, #383838);
+  }
+  
+  .Decrement:hover {
+    color: #fff;
+    border-width: 5px;
+    background-image: linear-gradient(to left, #999999, #383838);
+  }
