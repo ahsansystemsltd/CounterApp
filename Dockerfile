@@ -1,10 +1,14 @@
-FROM node:20-alpine3.17
+FROM node:latest
 
-WORKDIR /Docker
+WORKDIR /CounterApp
 
-COPY package.json /CounterApp/
-COPY src /CounterApp/
+COPY package.json .
+COPY package-lock.json .
 
 RUN npm install
+
+COPY . .
+
+EXPOSE 3000
 
 CMD ["npm", "start"]
